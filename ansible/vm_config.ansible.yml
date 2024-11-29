@@ -16,6 +16,14 @@
         - 10.10.0.1
         - 10.10.20.5
         state: present
+        
+  - block:
+    - name: update all packages
+      dnf:
+        name: "*"
+        state: latest
+    - name: upgrade system
+      command: dnf upgrade -y
 
   - block:
     - name: install mandantory packages
