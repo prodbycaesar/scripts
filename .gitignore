@@ -1,3 +1,4 @@
 /ansible/secrets/
 /.git/
 **/.DS_Store
+**/.vscode

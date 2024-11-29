@@ -1,0 +1,61 @@
+---
+- name: initial server config rocky linux
+  hosts: linux
+  remote_user: root
+  vars_files:
+    - /Users/julius/Documents/Homelab/scripts/ansible/secrets/ssh_keys.yml
+    - /Users/julius/Documents/Homelab/scripts/ansible/secrets/secrets.yml
+  
+  tasks:
+  - block:
+    - name: set DNS servers
+      community.general.nmcli:
+        conn_name: ens18
+        type: ethernet
+        dns4: 
+        - 10.10.0.1
+        - 10.10.20.5
+        state: present
+
+  - block:
+    - name: install mandantory packages
+      dnf:
+        name:
+          - epel-release
+          - yum-utils
+          - bash-completion
+          - pip
+          - qemu-guest-agent
+        state: latest  
+
+    - name: install recommended packages
+      dnf:
+        name:
+          - podman
+          - podman-compose
+          - fzf
+        state: latest
+
+    - name: python installation check
+      package:
+        name: python3
+        state: present
+    - name: ensure pip is installed
+      package:
+        name: python3-pip
+        state: present   
+    - name: install passlib using pip
+      pip:
+        name: passlib
+        state: present
+        executable: pip3
+
+  - block:
+    - name: add public key to root authorized_keys
+      authorized_key:
+        user: root
+        key: "{{ ssh_public_key }}"
+    - name: add public key to j4s authorized_keys
+      authorized_key:
+        user: j4s
+        key: "{{ ssh_public_key }}"
