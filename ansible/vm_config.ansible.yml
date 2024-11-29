@@ -59,10 +59,6 @@
         executable: pip3
 
   - block:
-    - name: add public key to root authorized_keys
-      authorized_key:
-        user: root
-        key: "{{ ssh_public_key }}"
     - name: add public key to j4s authorized_keys
       authorized_key:
         user: j4s
