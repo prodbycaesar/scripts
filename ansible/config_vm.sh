@@ -1,6 +1,6 @@
 #!/bin/zsh
 
-# Variables
+#variables
 work_dir="/Users/julius/Documents/Homelab/scripts/ansible"
 vault_pass="$work_dir/secrets/.vault_pass.txt"
 inventory_file="$work_dir/hosts"
@@ -9,15 +9,15 @@ log_file="$work_dir/script.log"
 ssh_password=$(< "$vault_pass")
 domain="caesarlabs.org"
 
-# Remote bind9 settings
+#remote bind9 variables
 raspberry_pi="pi.caesarlabs.org"
 bind9_container="bind9"
 zone_file="/etc/bind/db.caesarlab.cc"
 
-# Logging
+#logging
 echo "Script started at $(date)" | tee -a "$log_file"
 
-# Validate IP function
+#validate ips
 is_valid_ip() {
     local ip=$1
     echo "Validating IP: '$ip'" | tee -a "$log_file"
@@ -36,7 +36,7 @@ is_valid_ip() {
     return 1
 }
 
-# Update bind9 DNS on Raspberry Pi
+#update bind9 dns
 update_bind9_dns() {
     local ip=$1
     local fqdn=$2
@@ -44,10 +44,10 @@ update_bind9_dns() {
 
     echo "Updating bind9 DNS for $shortname ($ip) on Raspberry Pi..." | tee -a "$log_file"
 
-    # Hinzufügen eines A-Records zur Forward-Zone
+    #add a-entry
     ssh root@"$raspberry_pi" "docker exec $bind9_container bash -c 'echo \"$shortname IN A $ip\" >> $zone_file'"
 
-    # Zonendateien validieren und DNS-Server neu laden
+    #validate entry and reload
     ssh root@"$raspberry_pi" <<EOF
     docker exec $bind9_container bash -c "named-checkzone caesarlabs.org $zone_file"
     docker exec $bind9_container bash -c "rndc reload"
@@ -60,7 +60,7 @@ EOF
     fi
 }
 
-# Set hostname remotely and update /etc/hosts on the target server
+#set hostname and update /etc/hosts
 set_remote_hostname() {
     local fqdn=$1
     local shortname=$2
@@ -82,7 +82,7 @@ EOF
     fi
 }
 
-# Update inventory file
+#update inventory file
 update_inventory() {
     local fqdn=$1
     local ip=$2
@@ -94,16 +94,16 @@ update_inventory() {
     fi
 }
 
-# Ensure arguments are provided in pairs
+#ensure arguments are provided in pairs
 if (( $# % 2 != 0 )); then
     echo "Error: Arguments must be provided as pairs of IP and Hostname." | tee -a "$log_file"
     exit 1
 fi
 
-# Ensure inventory file exists
+#ensure inventory file exists
 touch "$inventory_file"
 
-# Add SSH keys
+#add ssh keys
 add_ssh_key() {
     local ip=$1
 
@@ -121,7 +121,7 @@ add_ssh_key() {
     fi
 }
 
-# Process IP-Hostname pairs
+#process ip - hostname pair
 for ((i = 1; i <= $#; i += 2)); do
     ip=$(echo "${@[$i]}" | xargs)
     hostname=$(echo "${@[$i+1]}" | xargs)
@@ -132,17 +132,17 @@ for ((i = 1; i <= $#; i += 2)); do
         set_remote_hostname "$fqdn" "$hostname" "$ip"
         add_ssh_key "$ip"
         update_inventory "$fqdn" "$ip"
-        update_bind9_dns "$ip" "$fqdn"  # Bind9-Update nur für Forward-Zone
+        update_bind9_dns "$ip" "$fqdn"
     else
         echo "$ip is not a valid IP. Skipping." | tee -a "$log_file"
     fi
 done
 
-# Remove duplicate entries from inventory
+#remove duplicate entries from inventory
 sort -u "$inventory_file" -o "$inventory_file"
 echo "Inventory file cleaned and updated." | tee -a "$log_file"
 
-# Insert [linux] prefix if not already present
+#insert [linux] prefix if available
 if ! grep -q "^\[linux\]$" "$inventory_file"; then
     temp_file=$(mktemp)
     echo -e "[linux]\n" > "$temp_file"
@@ -150,7 +150,7 @@ if ! grep -q "^\[linux\]$" "$inventory_file"; then
     mv "$temp_file" "$inventory_file"
 fi
 
-# Execute Ansible playbook
+#execute ansible playbook
 echo "Executing Ansible playbook..." | tee -a "$log_file"
 if ansible-playbook --vault-password-file "$vault_pass" --ssh-extra-args='-o StrictHostKeyChecking=no' -i "$inventory_file" --forks 10 "$ansible_playbook"; then
     echo "Ansible playbook executed successfully." | tee -a "$log_file"
