@@ -157,3 +157,341 @@ adding ssh key to 10.10.20.10...
 ssh key added successfully to 10.10.20.10.
 added 10.10.20.10 to inventory file.
 inventory file cleaned and updated.
+ansible playbook execution failed.
+script started at Sat Nov 30 09:19:34 CET 2024
+10.10.20.50 is a valid ip.
+adding host key for 10.10.20.50 to known_hosts...
+adding ssh key to 10.10.20.50...
+/usr/bin/ssh-copy-id: INFO: Source of key(s) to be installed: "/Users/julius/.ssh/id_rsa.pub"
+/usr/bin/ssh-copy-id: INFO: attempting to log in with the new key(s), to filter out any that are already installed
+/usr/bin/ssh-copy-id: INFO: 1 key(s) remain to be installed -- if you are prompted now it is to install the new keys
+Permission denied, please try again.
+Permission denied, please try again.
+failed to add ssh key to 10.10.20.50. Skipping.
+10.10.20.50 already exists in inventory file.
+inventory file cleaned and updated.
+executing ansible playbook...
+script started at Sat Nov 30 09:21:27 CET 2024
+10.10.20.50 is a valid ip.
+adding host key for 10.10.20.50 to known_hosts...
+adding ssh key to 10.10.20.50...
+/usr/bin/ssh-copy-id: INFO: Source of key(s) to be installed: "/Users/julius/.ssh/id_rsa.pub"
+/usr/bin/ssh-copy-id: INFO: attempting to log in with the new key(s), to filter out any that are already installed
+/usr/bin/ssh-copy-id: INFO: 1 key(s) remain to be installed -- if you are prompted now it is to install the new keys
+ssh key added successfully to 10.10.20.50.
+10.10.20.50 already exists in inventory file.
+inventory file cleaned and updated.
+executing ansible playbook...
+script started at Sat Nov 30 10:34:48 CET 2024
+10.10.20.100 is a valid ip.
+adding host key for 10.10.20.100 to known_hosts...
+failed to scan host key for 10.10.20.100. skipping.
+added 10.10.20.100 to inventory file.
+inventory file cleaned and updated.
+executing ansible playbook...
+script started at Sat Nov 30 10:59:44 CET 2024
+10.10.20.100 is a valid ip.
+adding host key for 10.10.20.100 to known_hosts...
+failed to scan host key for 10.10.20.100. skipping.
+added 10.10.20.100 to inventory file.
+inventory file cleaned and updated.
+executing ansible playbook...
+script started at Sat Nov 30 11:00:28 CET 2024
+10.10.255.40 is a valid ip.
+adding host key for 10.10.255.40 to known_hosts...
+adding ssh key to 10.10.255.40...
+/usr/bin/ssh-copy-id: INFO: Source of key(s) to be installed: "/Users/julius/.ssh/id_rsa.pub"
+/usr/bin/ssh-copy-id: INFO: attempting to log in with the new key(s), to filter out any that are already installed
+/usr/bin/ssh-copy-id: INFO: 1 key(s) remain to be installed -- if you are prompted now it is to install the new keys
+ssh key added successfully to 10.10.255.40.
+added 10.10.255.40 to inventory file.
+inventory file cleaned and updated.
+executing ansible playbook...
+Script started at Sat Nov 30 11:41:04 CET 2024
+Script started at Sat Nov 30 11:43:06 CET 2024
+Inventory file cleaned and updated.
+Executing Ansible playbook...
+Ansible playbook executed successfully.
+Script started at Sat Nov 30 11:49:24 CET 2024
+ is not a valid IP. Skipping.
+Inventory file cleaned and updated.
+Executing Ansible playbook...
+Ansible playbook executed successfully.
+Script started at Sat Nov 30 12:05:04 CET 2024
+ is not a valid IP. Skipping.
+Inventory file cleaned and updated.
+Executing Ansible playbook...
+Ansible playbook executed successfully.
+Script started at Sat Nov 30 12:09:07 CET 2024
+Validating IP: ''
+IP  does not match regex.
+ is not a valid IP. Skipping.
+Inventory file cleaned and updated.
+Executing Ansible playbook...
+Ansible playbook executed successfully.
+Script started at Sat Nov 30 12:10:19 CET 2024
+Validating IP: ''
+IP  does not match regex.
+ is not a valid IP. Skipping.
+Inventory file cleaned and updated.
+Executing Ansible playbook...
+Ansible playbook executed successfully.
+Script started at Sat Nov 30 12:12:03 CET 2024
+Validating IP: '10.10.255.35'
+IP 10.10.255.35 is valid.
+10.10.255.35 is a valid IP.
+Adding host key for j4s-test.caesarlabs.org (10.10.255.35) to known_hosts...
+getaddrinfo j4s-test.caesarlabs.org: nodename nor servname provided, or not known
+getaddrinfo j4s-test.caesarlabs.org: nodename nor servname provided, or not known
+getaddrinfo j4s-test.caesarlabs.org: nodename nor servname provided, or not known
+getaddrinfo j4s-test.caesarlabs.org: nodename nor servname provided, or not known
+getaddrinfo j4s-test.caesarlabs.org: nodename nor servname provided, or not known
+Failed to scan host key for j4s-test.caesarlabs.org. Skipping.
+Added j4s-test.caesarlabs.org to inventory file.
+Inventory file cleaned and updated.
+Executing Ansible playbook...
+Ansible playbook execution failed.
+Script started at Sat Nov 30 12:15:23 CET 2024
+Validating IP: '10.10.255.35'
+IP 10.10.255.35 is valid.
+10.10.255.35 is a valid IP.
+Adding 10.10.255.35 j4s-test.caesarlabs.org to /etc/hosts...
+Script started at Sat Nov 30 12:17:11 CET 2024
+Validating IP: '10.10.255.35'
+IP 10.10.255.35 is valid.
+10.10.255.35 is a valid IP.
+Adding host key for j4s-test.caesarlabs.org (10.10.255.35) to known_hosts...
+getaddrinfo j4s-test.caesarlabs.org: nodename nor servname provided, or not known
+getaddrinfo j4s-test.caesarlabs.org: nodename nor servname provided, or not known
+getaddrinfo j4s-test.caesarlabs.org: nodename nor servname provided, or not known
+getaddrinfo j4s-test.caesarlabs.org: nodename nor servname provided, or not known
+getaddrinfo j4s-test.caesarlabs.org: nodename nor servname provided, or not known
+Failed to scan host key for j4s-test.caesarlabs.org. Skipping.
+Adding 10.10.255.35 j4s-test.caesarlabs.org to /etc/hosts...
+Added j4s-test.caesarlabs.org ansible_host=10.10.255.35 to inventory file.
+Inventory file cleaned and updated.
+Executing Ansible playbook...
+Ansible playbook executed successfully.
+Script started at Sat Nov 30 12:21:08 CET 2024
+Validating IP: '10.10.255.35'
+IP 10.10.255.35 is valid.
+10.10.255.35 is a valid IP.
+Setting hostname j4s-test.caesarlabs.org on 10.10.255.35...
+Hostname j4s-test.caesarlabs.org successfully set on 10.10.255.35.
+Adding host key for j4s-test.caesarlabs.org (10.10.255.35) to known_hosts...
+getaddrinfo j4s-test.caesarlabs.org: nodename nor servname provided, or not known
+getaddrinfo j4s-test.caesarlabs.org: nodename nor servname provided, or not known
+getaddrinfo j4s-test.caesarlabs.org: nodename nor servname provided, or not known
+getaddrinfo j4s-test.caesarlabs.org: nodename nor servname provided, or not known
+getaddrinfo j4s-test.caesarlabs.org: nodename nor servname provided, or not known
+Failed to scan host key for j4s-test.caesarlabs.org. Skipping.
+Added j4s-test.caesarlabs.org ansible_host=10.10.255.35 to inventory file.
+Inventory file cleaned and updated.
+Executing Ansible playbook...
+Ansible playbook executed successfully.
+Script started at Sat Nov 30 12:29:36 CET 2024
+Validating IP: '10.10.255.35'
+IP 10.10.255.35 is valid.
+10.10.255.35 is a valid IP.
+Setting hostname j4s-test.caesarlabs.org on 10.10.255.35...
+Hostname j4s-test.caesarlabs.org successfully set on 10.10.255.35.
+Adding host key for 10.10.255.35 to known_hosts...
+Adding SSH key to 10.10.255.35...
+/usr/bin/ssh-copy-id: INFO: Source of key(s) to be installed: "/Users/julius/.ssh/id_rsa.pub"
+/usr/bin/ssh-copy-id: INFO: attempting to log in with the new key(s), to filter out any that are already installed
+
+/usr/bin/ssh-copy-id: WARNING: All keys were skipped because they already exist on the remote system.
+		(if you think this is a mistake, you may want to use -f option)
+
+SSH key added successfully to 10.10.255.35.
+j4s-test.caesarlabs.org ansible_host=10.10.255.35 already exists in inventory file.
+Inventory file cleaned and updated.
+Executing Ansible playbook...
+Ansible playbook executed successfully.
+Script started at Sat Nov 30 12:43:16 CET 2024
+Validating IP: '10.10.255.35'
+IP 10.10.255.35 is valid.
+10.10.255.35 is a valid IP.
+Setting hostname j4s-test.caesarlabs.org on 10.10.255.35...
+Hostname j4s-test.caesarlabs.org successfully set on 10.10.255.35.
+Adding host key for 10.10.255.35 to known_hosts...
+Adding SSH key to 10.10.255.35...
+/usr/bin/ssh-copy-id: INFO: Source of key(s) to be installed: "/Users/julius/.ssh/id_rsa.pub"
+/usr/bin/ssh-copy-id: INFO: attempting to log in with the new key(s), to filter out any that are already installed
+
+/usr/bin/ssh-copy-id: WARNING: All keys were skipped because they already exist on the remote system.
+		(if you think this is a mistake, you may want to use -f option)
+
+SSH key added successfully to 10.10.255.35.
+j4s-test.caesarlabs.org ansible_host=10.10.255.35 already exists in inventory file.
+Updating bind9 DNS for j4s-test.caesarlabs.org (10.10.255.35)...
+Failed to update DNS for j4s-test.caesarlabs.org (10.10.255.35).
+Inventory file cleaned and updated.
+Executing Ansible playbook...
+Ansible playbook executed successfully.
+Script started at Sat Nov 30 12:45:13 CET 2024
+Validating IP: '10.10.255.35'
+IP 10.10.255.35 is valid.
+10.10.255.35 is a valid IP.
+Setting hostname j4s-test.caesarlabs.org on 10.10.255.35...
+Hostname j4s-test.caesarlabs.org successfully set on 10.10.255.35.
+Adding host key for 10.10.255.35 to known_hosts...
+Adding SSH key to 10.10.255.35...
+/usr/bin/ssh-copy-id: INFO: Source of key(s) to be installed: "/Users/julius/.ssh/id_rsa.pub"
+/usr/bin/ssh-copy-id: INFO: attempting to log in with the new key(s), to filter out any that are already installed
+
+/usr/bin/ssh-copy-id: WARNING: All keys were skipped because they already exist on the remote system.
+		(if you think this is a mistake, you may want to use -f option)
+
+SSH key added successfully to 10.10.255.35.
+j4s-test.caesarlabs.org ansible_host=10.10.255.35 already exists in inventory file.
+Updating bind9 DNS for j4s-test.caesarlabs.org (10.10.255.35) on Raspberry Pi...
+Failed to update DNS for j4s-test.caesarlabs.org (10.10.255.35).
+Inventory file cleaned and updated.
+Executing Ansible playbook...
+Ansible playbook executed successfully.
+Script started at Sat Nov 30 12:50:24 CET 2024
+Validating IP: '10.10.255.35'
+IP 10.10.255.35 is valid.
+10.10.255.35 is a valid IP.
+Setting hostname j4s-test.caesarlabs.org on 10.10.255.35...
+Hostname j4s-test.caesarlabs.org successfully set on 10.10.255.35.
+Adding host key for 10.10.255.35 to known_hosts...
+Adding SSH key to 10.10.255.35...
+/usr/bin/ssh-copy-id: INFO: Source of key(s) to be installed: "/Users/julius/.ssh/id_rsa.pub"
+/usr/bin/ssh-copy-id: INFO: attempting to log in with the new key(s), to filter out any that are already installed
+
+/usr/bin/ssh-copy-id: WARNING: All keys were skipped because they already exist on the remote system.
+		(if you think this is a mistake, you may want to use -f option)
+
+SSH key added successfully to 10.10.255.35.
+j4s-test.caesarlabs.org ansible_host=10.10.255.35 already exists in inventory file.
+Updating bind9 DNS for j4s-test.caesarlabs.org (10.10.255.35) on Raspberry Pi...
+Failed to update DNS for j4s-test.caesarlabs.org (10.10.255.35).
+Inventory file cleaned and updated.
+Executing Ansible playbook...
+Script started at Sat Nov 30 12:50:41 CET 2024
+Validating IP: '10.10.255.35'
+IP 10.10.255.35 is valid.
+10.10.255.35 is a valid IP.
+Setting hostname j4s-test.caesarlabs.org on 10.10.255.35...
+Hostname j4s-test.caesarlabs.org successfully set on 10.10.255.35.
+Adding host key for 10.10.255.35 to known_hosts...
+Adding SSH key to 10.10.255.35...
+/usr/bin/ssh-copy-id: INFO: Source of key(s) to be installed: "/Users/julius/.ssh/id_rsa.pub"
+/usr/bin/ssh-copy-id: INFO: attempting to log in with the new key(s), to filter out any that are already installed
+
+/usr/bin/ssh-copy-id: WARNING: All keys were skipped because they already exist on the remote system.
+		(if you think this is a mistake, you may want to use -f option)
+
+SSH key added successfully to 10.10.255.35.
+j4s-test.caesarlabs.org ansible_host=10.10.255.35 already exists in inventory file.
+Updating bind9 DNS for j4s-test.caesarlabs.org (10.10.255.35) on Raspberry Pi...
+Failed to update DNS for j4s-test.caesarlabs.org (10.10.255.35).
+Inventory file cleaned and updated.
+Executing Ansible playbook...
+Script started at Sat Nov 30 12:51:16 CET 2024
+Validating IP: '10.10.255.35'
+IP 10.10.255.35 is valid.
+10.10.255.35 is a valid IP.
+Setting hostname j4s-test.caesarlabs.org on 10.10.255.35...
+Hostname j4s-test.caesarlabs.org successfully set on 10.10.255.35.
+Adding host key for 10.10.255.35 to known_hosts...
+Adding SSH key to 10.10.255.35...
+/usr/bin/ssh-copy-id: INFO: Source of key(s) to be installed: "/Users/julius/.ssh/id_rsa.pub"
+/usr/bin/ssh-copy-id: INFO: attempting to log in with the new key(s), to filter out any that are already installed
+
+/usr/bin/ssh-copy-id: WARNING: All keys were skipped because they already exist on the remote system.
+		(if you think this is a mistake, you may want to use -f option)
+
+SSH key added successfully to 10.10.255.35.
+j4s-test.caesarlabs.org ansible_host=10.10.255.35 already exists in inventory file.
+Updating bind9 DNS for j4s-test.caesarlabs.org (10.10.255.35) on Raspberry Pi...
+Failed to update DNS for j4s-test.caesarlabs.org (10.10.255.35).
+Inventory file cleaned and updated.
+Executing Ansible playbook...
+Ansible playbook executed successfully.
+Script started at Sat Nov 30 13:09:00 CET 2024
+Validating IP: '10.10.255.35'
+IP 10.10.255.35 is valid.
+10.10.255.35 is a valid IP.
+Setting hostname j4s-test.caesarlabs.org on 10.10.255.35...
+Hostname j4s-test.caesarlabs.org successfully set on 10.10.255.35.
+Adding host key for 10.10.255.35 to known_hosts...
+Adding SSH key to 10.10.255.35...
+/usr/bin/ssh-copy-id: INFO: Source of key(s) to be installed: "/Users/julius/.ssh/id_rsa.pub"
+/usr/bin/ssh-copy-id: INFO: attempting to log in with the new key(s), to filter out any that are already installed
+
+/usr/bin/ssh-copy-id: WARNING: All keys were skipped because they already exist on the remote system.
+		(if you think this is a mistake, you may want to use -f option)
+
+SSH key added successfully to 10.10.255.35.
+j4s-test.caesarlabs.org ansible_host=10.10.255.35 already exists in inventory file.
+Updating bind9 DNS for j4s-test.caesarlabs.org (10.10.255.35) on Raspberry Pi...
+DNS updated successfully for j4s-test.caesarlabs.org (10.10.255.35).
+Inventory file cleaned and updated.
+Executing Ansible playbook...
+Ansible playbook executed successfully.
+Script started at Sat Nov 30 13:10:23 CET 2024
+Validating IP: '10.10.255.35'
+IP 10.10.255.35 is valid.
+10.10.255.35 is a valid IP.
+Setting hostname j4s-test.caesarlabs.org on 10.10.255.35...
+Hostname j4s-test.caesarlabs.org successfully set on 10.10.255.35.
+Adding host key for 10.10.255.35 to known_hosts...
+Adding SSH key to 10.10.255.35...
+/usr/bin/ssh-copy-id: INFO: Source of key(s) to be installed: "/Users/julius/.ssh/id_rsa.pub"
+/usr/bin/ssh-copy-id: INFO: attempting to log in with the new key(s), to filter out any that are already installed
+
+/usr/bin/ssh-copy-id: WARNING: All keys were skipped because they already exist on the remote system.
+		(if you think this is a mistake, you may want to use -f option)
+
+SSH key added successfully to 10.10.255.35.
+j4s-test.caesarlabs.org ansible_host=10.10.255.35 already exists in inventory file.
+Updating bind9 DNS for j4s-test.caesarlabs.org (10.10.255.35) on Raspberry Pi...
+DNS updated successfully for j4s-test.caesarlabs.org (10.10.255.35).
+Inventory file cleaned and updated.
+Executing Ansible playbook...
+Ansible playbook executed successfully.
+Script started at Sat Nov 30 13:14:46 CET 2024
+Validating IP: '10.10.255.35'
+IP 10.10.255.35 is valid.
+10.10.255.35 is a valid IP.
+Setting hostname j4s-test.caesarlabs.org on 10.10.255.35...
+Hostname j4s-test.caesarlabs.org successfully set on 10.10.255.35.
+Adding host key for 10.10.255.35 to known_hosts...
+Adding SSH key to 10.10.255.35...
+/usr/bin/ssh-copy-id: INFO: Source of key(s) to be installed: "/Users/julius/.ssh/id_rsa.pub"
+/usr/bin/ssh-copy-id: INFO: attempting to log in with the new key(s), to filter out any that are already installed
+
+/usr/bin/ssh-copy-id: WARNING: All keys were skipped because they already exist on the remote system.
+		(if you think this is a mistake, you may want to use -f option)
+
+SSH key added successfully to 10.10.255.35.
+j4s-test.caesarlabs.org ansible_host=10.10.255.35 already exists in inventory file.
+Updating bind9 DNS for j4s-test (10.10.255.35) on Raspberry Pi...
+DNS updated successfully for j4s-test (10.10.255.35).
+Inventory file cleaned and updated.
+Executing Ansible playbook...
+Ansible playbook executed successfully.
+Script started at Sat Nov 30 13:21:02 CET 2024
+Validating IP: '10.10.255.35'
+IP 10.10.255.35 is valid.
+10.10.255.35 is a valid IP.
+Setting hostname j4s-test.caesarlabs.org on 10.10.255.35...
+Hostname j4s-test.caesarlabs.org successfully set on 10.10.255.35.
+Adding host key for 10.10.255.35 to known_hosts...
+Adding SSH key to 10.10.255.35...
+/usr/bin/ssh-copy-id: INFO: Source of key(s) to be installed: "/Users/julius/.ssh/id_rsa.pub"
+/usr/bin/ssh-copy-id: INFO: attempting to log in with the new key(s), to filter out any that are already installed
+
+/usr/bin/ssh-copy-id: WARNING: All keys were skipped because they already exist on the remote system.
+		(if you think this is a mistake, you may want to use -f option)
+
+SSH key added successfully to 10.10.255.35.
+j4s-test.caesarlabs.org ansible_host=10.10.255.35 already exists in inventory file.
+Updating bind9 DNS for j4s-test (10.10.255.35) on Raspberry Pi...
+DNS updated successfully for j4s-test (10.10.255.35).
+Inventory file cleaned and updated.
+Executing Ansible playbook...
+Ansible playbook executed successfully.

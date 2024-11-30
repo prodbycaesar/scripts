@@ -63,3 +63,8 @@
       authorized_key:
         user: j4s
         key: "{{ ssh_public_key }}"
+
+  - block:
+    - name: reboot system
+      ansible.builtin.reboot:
+
