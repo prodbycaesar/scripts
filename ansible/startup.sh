@@ -12,7 +12,7 @@ host_addr=("$@")
 #logging
 echo "script started at $(date)" | tee -a "$log_file"
 
-# validate ips
+#validate ips
 is_valid_ip() {
     local ip=$1
     if [[ $ip =~ ^([0-9]{1,3}\.){3}[0-9]{1,3}$ ]]; then
@@ -38,14 +38,14 @@ touch "$inventory_file"
 add_ssh_key() {
     local ip=$1
 
-    # add host key to known_hosts
+    #add host key to known_hosts
     echo "adding host key for $ip to known_hosts..." | tee -a "$log_file"
     if ! ssh-keyscan -H "$ip" >> ~/.ssh/known_hosts 2>>"$log_file"; then
         echo "failed to scan host key for $ip. skipping." | tee -a "$log_file"
         return
     fi
 
-    # Add SSH key to remote host
+    #add ssh key to remote host
     echo "adding ssh key to $ip..." | tee -a "$log_file"
     if sshpass -p "$ssh_password" ssh-copy-id root@"$ip" 2>>"$log_file"; then
         echo "ssh key added successfully to $ip." | tee -a "$log_file"
@@ -76,11 +76,28 @@ for ip in "${host_addr[@]}"; do
     fi
 done
 
-# remove duplicate entries from inventory
+#remove duplicate entries from inventory
 sort -u "$inventory_file" -o "$inventory_file"
 echo "inventory file cleaned and updated." | tee -a "$log_file"
 
-# execute ansible playbook
+#insert [linux] prefix
+if grep -q "^\\[linux\\]$" "$inventory_file"; then
+    sed -i '' '/^\[linux\]$/d' "$inventory_file"
+fi
+
+#create tmp file
+temp_file=$(mktemp)
+
+#add [linux] and break
+echo -e "[linux]\n" > "$temp_file"
+
+#add old file
+cat "$inventory_file" >> "$temp_file"
+
+#overwrite original with update file
+mv "$temp_file" "$inventory_file"
+
+#execute ansible playbook
 echo "executing ansible playbook..." | tee -a "$log_file"
 if ansible-playbook --vault-password-file "$vault_pass" --ssh-extra-args='-o StrictHostKeyChecking=no' -i "$inventory_file" --forks 10 "$ansible_playbook"; then
     echo "ansible playbook executed successfully." | tee -a "$log_file"

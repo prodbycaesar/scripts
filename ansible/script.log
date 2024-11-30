@@ -1,0 +1,159 @@
+script started at Sat Nov 30 08:33:29 CET 2024
+10.10.20.255 is a valid ip.
+adding host key for 10.10.20.255 to known_hosts...
+adding ssh key to 10.10.20.255...
+/usr/bin/ssh-copy-id: INFO: Source of key(s) to be installed: "/Users/julius/.ssh/id_rsa.pub"
+/usr/bin/ssh-copy-id: INFO: attempting to log in with the new key(s), to filter out any that are already installed
+/usr/bin/ssh-copy-id: INFO: 1 key(s) remain to be installed -- if you are prompted now it is to install the new keys
+ssh key added successfully to 10.10.20.255.
+added 10.10.20.255 to inventory file.
+inventory file cleaned and updated.
+executing ansible playbook...
+ansible playbook executed successfully.
+script started at Sat Nov 30 08:34:32 CET 2024
+10.10.20.255 is a valid ip.
+adding host key for 10.10.20.255 to known_hosts...
+adding ssh key to 10.10.20.255...
+/usr/bin/ssh-copy-id: INFO: Source of key(s) to be installed: "/Users/julius/.ssh/id_rsa.pub"
+/usr/bin/ssh-copy-id: INFO: attempting to log in with the new key(s), to filter out any that are already installed
+
+/usr/bin/ssh-copy-id: WARNING: All keys were skipped because they already exist on the remote system.
+		(if you think this is a mistake, you may want to use -f option)
+
+ssh key added successfully to 10.10.20.255.
+10.10.20.255 already exists in inventory file.
+inventory file cleaned and updated.
+executing ansible playbook...
+ansible playbook executed successfully.
+script started at Sat Nov 30 08:39:27 CET 2024
+10.10.20.255 is a valid ip.
+adding host key for 10.10.20.255 to known_hosts...
+adding ssh key to 10.10.20.255...
+/usr/bin/ssh-copy-id: INFO: Source of key(s) to be installed: "/Users/julius/.ssh/id_rsa.pub"
+/usr/bin/ssh-copy-id: INFO: attempting to log in with the new key(s), to filter out any that are already installed
+
+/usr/bin/ssh-copy-id: WARNING: All keys were skipped because they already exist on the remote system.
+		(if you think this is a mistake, you may want to use -f option)
+
+ssh key added successfully to 10.10.20.255.
+10.10.20.255 already exists in inventory file.
+inventory file cleaned and updated.
+executing ansible playbook...
+ansible playbook executed successfully.
+script started at Sat Nov 30 08:40:24 CET 2024
+10.10.20.255 is a valid ip.
+adding host key for 10.10.20.255 to known_hosts...
+adding ssh key to 10.10.20.255...
+/usr/bin/ssh-copy-id: INFO: Source of key(s) to be installed: "/Users/julius/.ssh/id_rsa.pub"
+/usr/bin/ssh-copy-id: INFO: attempting to log in with the new key(s), to filter out any that are already installed
+
+/usr/bin/ssh-copy-id: WARNING: All keys were skipped because they already exist on the remote system.
+		(if you think this is a mistake, you may want to use -f option)
+
+ssh key added successfully to 10.10.20.255.
+added 10.10.20.255 to inventory file.
+inventory file cleaned and updated.
+executing ansible playbook...
+ansible playbook executed successfully.
+script started at Sat Nov 30 08:41:44 CET 2024
+10.10.20.255 is a valid ip.
+adding host key for 10.10.20.255 to known_hosts...
+adding ssh key to 10.10.20.255...
+/usr/bin/ssh-copy-id: INFO: Source of key(s) to be installed: "/Users/julius/.ssh/id_rsa.pub"
+/usr/bin/ssh-copy-id: INFO: attempting to log in with the new key(s), to filter out any that are already installed
+
+/usr/bin/ssh-copy-id: WARNING: All keys were skipped because they already exist on the remote system.
+		(if you think this is a mistake, you may want to use -f option)
+
+ssh key added successfully to 10.10.20.255.
+adding 10.10.20.255 under [linux] group...
+inventory file cleaned and updated.
+executing ansible playbook...
+ansible playbook executed successfully.
+script started at Sat Nov 30 08:51:53 CET 2024
+10.10.20.255 is a valid ip.
+adding host key for 10.10.20.255 to known_hosts...
+adding ssh key to 10.10.20.255...
+/usr/bin/ssh-copy-id: INFO: Source of key(s) to be installed: "/Users/julius/.ssh/id_rsa.pub"
+/usr/bin/ssh-copy-id: INFO: attempting to log in with the new key(s), to filter out any that are already installed
+
+/usr/bin/ssh-copy-id: WARNING: All keys were skipped because they already exist on the remote system.
+		(if you think this is a mistake, you may want to use -f option)
+
+ssh key added successfully to 10.10.20.255.
+added 10.10.20.255 to inventory file.
+inventory file cleaned and updated.
+executing ansible playbook...
+ansible playbook executed successfully.
+script started at Sat Nov 30 08:53:51 CET 2024
+10.10.20.255 is a valid ip.
+adding host key for 10.10.20.255 to known_hosts...
+adding ssh key to 10.10.20.255...
+/usr/bin/ssh-copy-id: INFO: Source of key(s) to be installed: "/Users/julius/.ssh/id_rsa.pub"
+/usr/bin/ssh-copy-id: INFO: attempting to log in with the new key(s), to filter out any that are already installed
+
+/usr/bin/ssh-copy-id: WARNING: All keys were skipped because they already exist on the remote system.
+		(if you think this is a mistake, you may want to use -f option)
+
+ssh key added successfully to 10.10.20.255.
+added 10.10.20.255 to inventory file.
+inventory file cleaned and updated.
+executing ansible playbook...
+ansible playbook executed successfully.
+script started at Sat Nov 30 08:59:06 CET 2024
+10.10.20.255 is a valid ip.
+adding host key for 10.10.20.255 to known_hosts...
+adding ssh key to 10.10.20.255...
+/usr/bin/ssh-copy-id: INFO: Source of key(s) to be installed: "/Users/julius/.ssh/id_rsa.pub"
+/usr/bin/ssh-copy-id: INFO: attempting to log in with the new key(s), to filter out any that are already installed
+
+/usr/bin/ssh-copy-id: WARNING: All keys were skipped because they already exist on the remote system.
+		(if you think this is a mistake, you may want to use -f option)
+
+ssh key added successfully to 10.10.20.255.
+added 10.10.20.255 to inventory file.
+inventory file cleaned and updated.
+executing ansible playbook...
+ansible playbook executed successfully.
+script started at Sat Nov 30 09:02:23 CET 2024
+10.10.20.255 is a valid ip.
+adding host key for 10.10.20.255 to known_hosts...
+adding ssh key to 10.10.20.255...
+/usr/bin/ssh-copy-id: INFO: Source of key(s) to be installed: "/Users/julius/.ssh/id_rsa.pub"
+/usr/bin/ssh-copy-id: INFO: attempting to log in with the new key(s), to filter out any that are already installed
+
+/usr/bin/ssh-copy-id: WARNING: All keys were skipped because they already exist on the remote system.
+		(if you think this is a mistake, you may want to use -f option)
+
+ssh key added successfully to 10.10.20.255.
+added 10.10.20.255 to inventory file.
+inventory file cleaned and updated.
+executing ansible playbook...
+ansible playbook executed successfully.
+script started at Sat Nov 30 09:04:09 CET 2024
+10.10.20.255 is a valid ip.
+adding host key for 10.10.20.255 to known_hosts...
+adding ssh key to 10.10.20.255...
+/usr/bin/ssh-copy-id: INFO: Source of key(s) to be installed: "/Users/julius/.ssh/id_rsa.pub"
+/usr/bin/ssh-copy-id: INFO: attempting to log in with the new key(s), to filter out any that are already installed
+
+/usr/bin/ssh-copy-id: WARNING: All keys were skipped because they already exist on the remote system.
+		(if you think this is a mistake, you may want to use -f option)
+
+ssh key added successfully to 10.10.20.255.
+10.10.20.255 already exists in inventory file.
+inventory file cleaned and updated.
+executing ansible playbook...
+script started at Sat Nov 30 09:08:16 CET 2024
+10.10.20.10 is a valid ip.
+adding host key for 10.10.20.10 to known_hosts...
+adding ssh key to 10.10.20.10...
+/usr/bin/ssh-copy-id: INFO: Source of key(s) to be installed: "/Users/julius/.ssh/id_rsa.pub"
+/usr/bin/ssh-copy-id: INFO: attempting to log in with the new key(s), to filter out any that are already installed
+
+/usr/bin/ssh-copy-id: WARNING: All keys were skipped because they already exist on the remote system.
+		(if you think this is a mistake, you may want to use -f option)
+
+ssh key added successfully to 10.10.20.10.
+added 10.10.20.10 to inventory file.
+inventory file cleaned and updated.
