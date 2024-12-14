@@ -1,4 +1,5 @@
-[linux]
 10.10.20.10
 10.10.20.50
+[linux]
+j4s-share.caesarlabs.org ansible_host=10.10.255.5
 j4s-test.caesarlabs.org ansible_host=10.10.255.35

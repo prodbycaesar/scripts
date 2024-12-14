@@ -495,3 +495,87 @@ DNS updated successfully for j4s-test (10.10.255.35).
 Inventory file cleaned and updated.
 Executing Ansible playbook...
 Ansible playbook executed successfully.
+Script started at Tue Dec 10 16:32:54 CET 2024
+Validating IP: '10.10.255.40'
+IP 10.10.255.40 is valid.
+10.10.255.40 is a valid IP.
+Setting hostname j4s-fileshare.caesarlabs.org on 10.10.255.40...
+Hostname j4s-fileshare.caesarlabs.org successfully set on 10.10.255.40.
+Adding host key for 10.10.255.40 to known_hosts...
+Adding SSH key to 10.10.255.40...
+/usr/bin/ssh-copy-id: INFO: Source of key(s) to be installed: "/Users/julius/.ssh/id_rsa.pub"
+/usr/bin/ssh-copy-id: INFO: attempting to log in with the new key(s), to filter out any that are already installed
+
+/usr/bin/ssh-copy-id: WARNING: All keys were skipped because they already exist on the remote system.
+		(if you think this is a mistake, you may want to use -f option)
+
+SSH key added successfully to 10.10.255.40.
+Added j4s-fileshare.caesarlabs.org ansible_host=10.10.255.40 to inventory file.
+Updating bind9 DNS for j4s-fileshare (10.10.255.40) on Raspberry Pi...
+Failed to update DNS for j4s-fileshare (10.10.255.40).
+Inventory file cleaned and updated.
+Executing Ansible playbook...
+Ansible playbook executed successfully.
+Script started at Tue Dec 10 16:41:07 CET 2024
+Validating IP: '10.10.255.40'
+IP 10.10.255.40 is valid.
+10.10.255.40 is a valid IP.
+Setting hostname j4s-fileshare.caesarlabs.org on 10.10.255.40...
+Hostname j4s-fileshare.caesarlabs.org successfully set on 10.10.255.40.
+Adding host key for 10.10.255.40 to known_hosts...
+Adding SSH key to 10.10.255.40...
+/usr/bin/ssh-copy-id: INFO: Source of key(s) to be installed: "/Users/julius/.ssh/id_rsa.pub"
+/usr/bin/ssh-copy-id: INFO: attempting to log in with the new key(s), to filter out any that are already installed
+
+/usr/bin/ssh-copy-id: WARNING: All keys were skipped because they already exist on the remote system.
+		(if you think this is a mistake, you may want to use -f option)
+
+SSH key added successfully to 10.10.255.40.
+j4s-fileshare.caesarlabs.org ansible_host=10.10.255.40 already exists in inventory file.
+Updating bind9 DNS for j4s-fileshare (10.10.255.40) on Raspberry Pi...
+DNS updated successfully for j4s-fileshare (10.10.255.40).
+Inventory file cleaned and updated.
+Executing Ansible playbook...
+Ansible playbook executed successfully.
+Script started at Tue Dec 10 19:53:36 CET 2024
+Validating IP: '10.10.255.4'
+IP 10.10.255.4 is valid.
+10.10.255.4 is a valid IP.
+Setting hostname test.caesarlabs.org on 10.10.255.4...
+Hostname test.caesarlabs.org successfully set on 10.10.255.4.
+Adding host key for 10.10.255.4 to known_hosts...
+Adding SSH key to 10.10.255.4...
+/usr/bin/ssh-copy-id: INFO: Source of key(s) to be installed: "/Users/julius/.ssh/id_rsa.pub"
+/usr/bin/ssh-copy-id: INFO: attempting to log in with the new key(s), to filter out any that are already installed
+
+/usr/bin/ssh-copy-id: WARNING: All keys were skipped because they already exist on the remote system.
+		(if you think this is a mistake, you may want to use -f option)
+
+SSH key added successfully to 10.10.255.4.
+Added test.caesarlabs.org ansible_host=10.10.255.4 to inventory file.
+Updating bind9 DNS for test (10.10.255.4) on Raspberry Pi...
+DNS updated successfully for test (10.10.255.4).
+Inventory file cleaned and updated.
+Executing Ansible playbook...
+Ansible playbook execution failed.
+Script started at Tue Dec 10 20:09:40 CET 2024
+Validating IP: '10.10.255.5'
+IP 10.10.255.5 is valid.
+10.10.255.5 is a valid IP.
+Setting hostname j4s-share.caesarlabs.org on 10.10.255.5...
+Hostname j4s-share.caesarlabs.org successfully set on 10.10.255.5.
+Adding host key for 10.10.255.5 to known_hosts...
+Adding SSH key to 10.10.255.5...
+/usr/bin/ssh-copy-id: INFO: Source of key(s) to be installed: "/Users/julius/.ssh/id_rsa.pub"
+/usr/bin/ssh-copy-id: INFO: attempting to log in with the new key(s), to filter out any that are already installed
+
+/usr/bin/ssh-copy-id: WARNING: All keys were skipped because they already exist on the remote system.
+		(if you think this is a mistake, you may want to use -f option)
+
+SSH key added successfully to 10.10.255.5.
+Added j4s-share.caesarlabs.org ansible_host=10.10.255.5 to inventory file.
+Updating bind9 DNS for j4s-share (10.10.255.5) on Raspberry Pi...
+DNS updated successfully for j4s-share (10.10.255.5).
+Inventory file cleaned and updated.
+Executing Ansible playbook...
+Ansible playbook execution failed.

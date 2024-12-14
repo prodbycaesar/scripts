@@ -13,8 +13,8 @@
         conn_name: ens18
         type: ethernet
         dns4: 
-        - 10.10.0.1
         - 10.10.20.5
+        - 10.10.0.1
         state: present
         
   - block:
